@@ -1,6 +1,5 @@
 ﻿using BasicCorePrograms;
 {
-    Flipcoin f = new Flipcoin();
-    f.CheckHeadTail();
-
+    LeapYear f = new LeapYear();
+    f.FindLeap();
 }
