@@ -1,27 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BasicCorePrograms
+namespace Compute_Quotient_Remainder
 {
-    internal class LeapYear
+    class Program
     {
-
-        public void FindLeap()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Enter a Year");
-            int Year = Convert.ToInt32(Console.ReadLine());
-            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
-            {
-                Console.WriteLine("It is a Leap Year");
-            }
+            Console.Write("Input the dividend: ");
+            int dividend = Convert.ToInt32(Console.ReadLine());
 
-            else
-            {
-                Console.WriteLine("it is a not leap year");
-            }
+            Console.Write("Input the divisor: ");
+            int divisor = Convert.ToInt32(Console.ReadLine());
+
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+            Console.WriteLine("Quotient = {0}", quotient);
+            Console.WriteLine("Remainder = {0}", remainder);
+            Console.ReadLine();
         }
     }
 }
